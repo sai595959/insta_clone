@@ -45,3 +45,5 @@ end
 
 gem 'carrierwave'
 gem 'rmagick'
+
+gem 'twitter-bootstrap-rails'
