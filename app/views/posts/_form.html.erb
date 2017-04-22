@@ -1,0 +1,27 @@
+<%= form_for(@post, url: choose_new_or_edit) do |f| %>
+
+  <% if @post.errors.any? %>
+    <div id="error_explanation">
+      <!--バリデーションエラーの件数を表示します。-->
+      <h2><%= @post.errors.count %>件のエラーがあります</h2>
+
+      <ul>
+        <!--@blog.errorsは@blogをバリデーションした際のエラー情報です。-->
+        <!--full_messagesは複数のエラーメッセージを表します。-->
+        <% @post.errors.full_messages.each do |msg| %>
+          <li><%= msg %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+
+  <%= f.label "コメント" %>
+  <%= f.text_field :content %>
+  <%= f.label "photo" %>
+  <%= f.file_field :photo %>
+
+  <br>
+  <%= f.submit "投稿する" %>
+<% end %>
+<%= link_to "投稿一覧にもどる", posts_path %>
