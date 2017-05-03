@@ -8,7 +8,7 @@
   <%= f.hidden_field :photo %>
   <%= f.hidden_field :photo_cache %>
 
-  <p>コメント：<%= @post.content %></p>
+  <p><%= @post.content %></p>
   <p><%= confirm_photo(@post) %></p>
 
   <%= f.submit "投稿する", class: "btn btn-primary"%>

@@ -1,11 +1,13 @@
 <div class="container">
   <div class="wrapper col-xs-10 col-xs-offset-1">
-    <p><%= notice %></p>
+
+      <p class="flash"><%= notice %><%= alert %></p>
+
     <h1>投稿一覧</h1>
     <p><%= link_to "投稿", new_post_path, class:'btn btn-primary' %></p>
-    <% @posts.each do |post| %>
+    <% @posts.reverse_each do |post| %>
       <div class="row">
-      <p>コメント：<%= post.content %></p>
+      <p><%= post.content %></p>
       <p><%= post_photo(post) %></p>
 
       <%= link_to "編集", edit_post_path(post.id), data: { confirm: '本当に編集していいですか？' }, class: 'btn btn-success' %>
