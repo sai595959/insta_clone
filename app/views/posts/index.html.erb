@@ -9,6 +9,14 @@
 
 
       <div class="row">
+        <div class="toukousha">
+          <div class="text-left">
+            <%= profile_img(User.find(post.user_id),'index') %>
+            <%= User.find(post.user_id).name %>が投稿しました
+          </div>
+        </div>
+      </div>
+        <div class="row">
         <div class = "photo">
           <p><%= post_photo(post) %></p>
           <p><%= post.content %></p>

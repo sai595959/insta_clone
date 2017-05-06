@@ -10,7 +10,7 @@
 }
 
 .photo_confirm{
-  max-height: 500px;
+  max-height: 400px;
 }
 
 // Place all the styles related to the blogs controller here.
@@ -26,6 +26,17 @@
         background-color: white;
         margin-bottom: 60px;
         padding-top: 10px;
+      }
+      .toukousha{
+        border: 1px solid #ccc;
+        border-collapse: collapse;
+        word-wrap: break-word;
+        background-color: white;
+        margin-bottom: -1px;
+        .text-left{
+          margin: 10px;
+        }
+
       }
     }
 }

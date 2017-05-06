@@ -1,8 +1,8 @@
 header {
   width: 100%;
   background-color: white;
-  height: 54px;
-  border-bottom: 1px solid #ccc;
+  height: 51px;
+
 }
 
 header ul {
@@ -28,13 +28,7 @@ header ul:after {
   clear: both;
 }
 
-.main-header {
-  padding-bottom: 15%;
-  width: 100%;
-  background-size: cover;
-  background-image: url("images-master/header.jpg");
-  background-attachment: fixed;
-}
+
 
 .main-header img {
   display: block;
@@ -116,4 +110,9 @@ body {
 
 .insta_header{
   padding-right: 40px;
+}
+
+.navbar{
+  background-color: white;
+  margin-bottom: 0px;
 }
